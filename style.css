@@ -778,3 +778,71 @@ strong{
 
     font-weight:900;
 }
+
+.contact-cta{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.contact-cta h3{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px cyan,
+    0 0 20px #7c3aed;
+}
+
+.contact-cta p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    opacity:.9;
+
+    margin-bottom:30px;
+}
+
+.whatsapp-cta{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        #00ffff,
+        #7c3aed
+    );
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 40px #7c3aed;
+
+    transition:.3s;
+}
+
+.whatsapp-cta:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 30px cyan,
+    0 0 60px #7c3aed;
+}
