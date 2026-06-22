@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PrimeAiHub Demo Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background:#030712;
+color:white;
+min-height:100vh;
+padding:40px 20px;
+}
+
+h1{
+text-align:center;
+font-size:3rem;
+margin-bottom:15px;
+
+text-shadow:
+0 0 10px cyan,
+0 0 20px cyan;
+}
+
+.subtitle{
+text-align:center;
+opacity:.8;
+margin-bottom:50px;
+}
+
+.lock-screen{
+max-width:500px;
+margin:auto;
+padding:40px;
+border-radius:25px;
+
+background:
+rgba(255,255,255,.05);
+
+backdrop-filter:blur(15px);
+
+border:
+1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+box-shadow:
+0 0 25px rgba(0,255,255,.2);
+}
+
+.lock-screen h2{
+margin-bottom:20px;
+}
+
+.lock-screen input{
+width:100%;
+padding:15px;
+border:none;
+outline:none;
+border-radius:12px;
+margin-bottom:20px;
+font-size:1rem;
+}
+
+.unlock-btn{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+background:
+linear-gradient(
+135deg,
+#00ffff,
+#7c3aed
+);
+
+color:white;
+
+}
+
+.gallery{
+
+display:none;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+.demo-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.demo-card{
+
+background:
+rgba(255,255,255,.05);
+
+border:
+1px solid rgba(255,255,255,.08);
+
+border-radius:25px;
+
+overflow:hidden;
+
+transition:.4s;
+
+box-shadow:
+0 0 15px rgba(0,255,255,.1);
+
+}
+
+.demo-card:hover{
+
+transform:
+translateY(-10px);
+
+box-shadow:
+0 0 25px cyan,
+0 0 40px #7c3aed;
+
+}
+
+.demo-card img{
+
+width:100%;
+height:220px;
+
+object-fit:cover;
+
+}
+
+.demo-content{
+
+padding:25px;
+
+}
+
+.demo-content h3{
+
+margin-bottom:10px;
+
+}
+
+.demo-content p{
+
+font-size:.9rem;
+
+opacity:.8;
+
+line-height:1.6;
+
+margin-bottom:20px;
+
+}
+
+.demo-btn{
+
+display:inline-block;
+
+padding:12px 25px;
+
+text-decoration:none;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+135deg,
+#00ffff,
+#7c3aed
+);
+
+color:white;
+
+font-weight:bold;
+
+}
+
+.error{
+
+color:#ff4d4d;
+
+margin-top:15px;
+
+display:none;
+
+text-align:center;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Website Demo Gallery</h1>
+
+<p class="subtitle">
+Exclusive Industry Website Demonstrations by PrimeAiHub
+</p>
+
+<!-- LOCK SCREEN -->
+
+<div class="lock-screen" id="lockScreen">
+
+<h2>Enter Access Code</h2>
+
+<input
+type="password"
+id="accessCode"
+placeholder="Enter Access Code">
+
+<button
+class="unlock-btn"
+onclick="unlockGallery()">
+Unlock Demos
+</button>
+
+<p class="error" id="errorMsg">
+Invalid Access Code
+</p>
+
+</div>
+
+<!-- DEMO GALLERY -->
+
+<div class="gallery" id="gallery">
+
+<div class="demo-grid">
+
+<!-- BEAUTY -->
+
+<div class="demo-card">
+
+<img src="images/beauty-demo.jpg">
+
+<div class="demo-content">
+
+<h3>Beauty Parlour</h3>
+
+<p>
+Premium salon website with services,
+gallery, pricing and WhatsApp booking.
+</p>
+
+<a
+class="demo-btn"
+target="_blank"
+href="https://prime-aihub.github.io/premium-beauty-parlour/index.html">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<!-- TOURISM -->
+
+<div class="demo-card">
+
+<img src="images/travel-demo.jpg">
+
+<div class="demo-content">
+
+<h3>Tourism & Travel</h3>
+
+<p>
+Luxury travel website showcasing
+destinations, packages and bookings.
+</p>
+
+<a
+class="demo-btn"
+target="_blank"
+href="https://prime-aihub.github.io/Travelex-Tourism/">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CLINIC -->
+
+<div class="demo-card">
+
+<img src="images/clinic-demo.jpg">
+
+<div class="demo-content">
+
+<h3>Clinic & Healthcare</h3>
+
+<p>
+Modern healthcare website with
+appointments and patient services.
+</p>
+
+<a
+class="demo-btn"
+target="_blank"
+href="https://prime-aihub.github.io/Clinic-Premium-Website-1/">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<!-- SPORTS -->
+
+<div class="demo-card">
+
+<img src="images/sports-demo.jpg">
+
+<div class="demo-content">
+
+<h3>Sports Academy</h3>
+
+<p>
+Karate and self-defence academy
+website with programs and admissions.
+</p>
+
+<a
+class="demo-btn"
+target="_blank"
+href="https://prime-aihub.github.io/peace-self-defence-academy/">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<!-- RESTAURANT -->
+
+<div class="demo-card">
+
+<img src="images/restaurant-demo.jpg">
+
+<div class="demo-content">
+
+<h3>Restaurant Website</h3>
+
+<p>
+Restaurant website with menu,
+reservation and WhatsApp ordering.
+</p>
+
+<a
+class="demo-btn"
+target="_blank"
+href="https://prime-aihub.github.io/SpiceHaven-Restaurant-sample/">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function unlockGallery(){
+
+const code =
+document.getElementById("accessCode").value;
+
+if(code === "PRIME1796"){
+
+document.getElementById(
+"lockScreen"
+).style.display = "none";
+
+document.getElementById(
+"gallery"
+).style.display = "block";
+
+}
+else{
+
+document.getElementById(
+"errorMsg"
+).style.display = "block";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
