@@ -1007,3 +1007,98 @@ transform:translateX(-50%);
 }
 
 }
+
+/* =========================
+   PORTFOLIO BUTTONS
+========================= */
+
+.demo-btn{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+width:180px;
+
+margin:20px auto 0;
+
+padding:14px 28px;
+
+text-decoration:none;
+
+font-weight:700;
+
+font-size:1rem;
+
+letter-spacing:.5px;
+
+color:#fff;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+135deg,
+#00e5ff,
+#2563ff,
+#7c3aed
+);
+
+border:
+1px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 0 10px rgba(0,229,255,.6),
+0 0 25px rgba(37,99,255,.5),
+0 0 45px rgba(124,58,237,.5);
+
+transition:.4s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.demo-btn:hover{
+
+transform:
+translateY(-5px)
+scale(1.05);
+
+box-shadow:
+0 0 20px #00e5ff,
+0 0 40px #2563ff,
+0 0 80px #7c3aed;
+
+}
+
+.demo-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+
+transition:.8s;
+
+}
+
+.demo-btn:hover::before{
+
+left:130%;
+
+}
