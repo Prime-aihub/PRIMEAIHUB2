@@ -553,6 +553,37 @@ View Demo
   
 </div>
 
+<script>
+
+function unlockGallery(){
+
+const code =
+document.getElementById("accessCode").value;
+
+if(code === "PRIME1796"){
+
+document.getElementById(
+"lockScreen"
+).style.display = "none";
+
+document.getElementById(
+"gallery"
+).style.display = "block";
+
+}
+else{
+
+document.getElementById(
+"errorMsg"
+).style.display = "block";
+
+}
+
+}
+
+</script>
+
+ 
 </div>
 
 
